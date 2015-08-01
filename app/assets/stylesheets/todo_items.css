@@ -1,0 +1,103 @@
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+body {
+  background-image: url(bg_clouds.gif);
+  background-attachment: fixed;
+  background-repeat: repeat;
+}
+
+    /*  modifies the header 'List of To Do Items'  */
+
+h1 {
+  color: #333333;
+  font-family: 'Montserrat'; sans-serif;
+  border: 0.5em;
+  font-size: 4.25em;
+  text-align: center;
+  text-decoration: none;
+}
+
+      /* modifies the appearance of the table   */
+
+table {
+  background-color: rgba(71, 116, 139, 0.5);
+  border: 2.5px solid rgba(71, 116, 139, 0.4);
+  border-radius: 40px;
+  column-gap: 50px;
+  font-family: 'Montserrat'; sans-serif;
+  width: 20em;
+  height: 19em;
+  /*text-align: center;*/
+  padding: 2em;
+  margin: auto;
+}
+
+tr th {
+  font-family: 'Montserrat'; sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-decoration: underline;
+  word-spacing: 15px;
+  padding: 1em;
+}
+
+td {
+  color: #000000;
+  font-family: 'Montserrat'; sans-serif;
+  font-size: 1.75em;
+  word-spacing: 9em;
+  line-height: normal;
+  list-style: circle;
+  padding: 1em;
+}
+
+tr td i:link {
+  color: black;
+}
+
+tr td i:visited {
+  color: black;
+}
+
+tr td i:hover {
+  background-color: inherit;
+}
+
+tr td i:active {
+  color: black;
+}
+
+
+    /* modifies the appearance of the bottom
+    link 'Create a New To-Do Item'  */
+
+.newitem {
+  font-family: 'Montserrat'; sans-serif;
+  font-size: 1.75em;
+}
+
+.newitem a:link {
+  color: #0099CC;
+  text-decoration: none;
+}
+
+.newitem a:visited {
+  color: #0099CC;
+  text-decoration: none;
+}
+
+.newitem a:hover {
+  color: #000000;
+  background-color: inherit;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.newitem a:active {
+  color: #0099CC;
+  text-decoration: none;
+}

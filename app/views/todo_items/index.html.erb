@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<br><br><br>
+<h1>List of To Do Items</h1>
+<br>
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Starred</th>
+      <th>Hidden</th>
+      <th>View</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @todo_items.each do |todo_item| %>
+      <tr>
+        <td><%= todo_item.description %></td>
+        <td><%= todo_item.starred %></td>
+        <td><%= todo_item.hidden %></td>
+        <p></p>
+        <td><%= link_to '<i class="fa fa-eye"></i>'.html_safe, todo_item %></td>
+        <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_todo_item_path(todo_item) %></td>
+        <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br><br>
+
+<center><div class="newitem">
+<%= link_to 'Create a New To-Do Item', new_todo_item_path %></center></div>
+<br><br>
